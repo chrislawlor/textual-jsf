@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "textual-jsf"
+version = "0.1.0"
+description = "JSON Schema Forms for Textual"
+authors = ["Chris Lawlor <lawlor.chris@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "textual_jsf"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+textual = "^0.29.0"
+jsonschema = "^4.18.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.12.2"
+black = "^23.3.0"
+flake8 = "^5.0.4"
+mypy = "^1.4.1"
+isort = "^5.12.0"
+textual-dev = "^1.0.1"
+pydantic = "^1.10"
+ipdb = "^0.13.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
